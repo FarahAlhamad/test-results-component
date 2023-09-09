@@ -1,0 +1,181 @@
+/* global styles */
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --smoked-white: rgb(193, 181, 244);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.component-wrapper {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+}
+
+.your-result-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+  background: linear-gradient(
+    0deg,
+    rgba(49, 44, 234, 1) 41%,
+    rgba(103, 67, 255, 1) 100%
+  );
+  border-radius: 5%;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  z-index: 10px;
+  position: relative;
+}
+
+.your-result-card .title {
+  font-size: 15px;
+  color: var(--smoked-white);
+}
+
+.your-result-card .circle {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: linear-gradient(
+    0deg,
+    rgba(53, 45, 235, 1) 9%,
+    rgba(68, 47, 226, 1) 66%,
+    rgba(71, 43, 218, 1) 84%,
+    rgba(57, 26, 149, 1) 100%
+  );
+}
+
+.your-result-card .circle h1 {
+  color: white;
+  margin: 0;
+  margin-top: 25px;
+  font-size: 45px;
+  font-weight: 600;
+  height: 60px;
+}
+
+.your-result-card .circle div {
+  font-size: 12px;
+  color: var(--smoked-white);
+}
+
+.your-result-card .result-label {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+}
+
+.your-result-card .result-description {
+  width: 200px;
+  font-size: 12px;
+  color: var(--smoked-white);
+}
+
+.summary-card {
+  padding: 40px 30px 30px 55px;
+  background-color: brown;
+  width: 50%;
+  height: 100%;
+  margin: 0 0 0 -20px;
+  border-radius: 5%;
+  background-color: white;
+  box-shadow: 2px 3px 10px gray;
+}
+
+.summary-card .title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.labels-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.summary-card .labels-wrapper .label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.summary-card .labels-wrapper .label.reaction-color {
+  background-color: rgb(255, 246, 245);
+}
+
+.summary-card .labels-wrapper .label.memory-color {
+  background-color: rgb(255, 251, 242);
+}
+
+.summary-card .labels-wrapper .label.verbal-color {
+  background-color: rgb(242, 251, 250);
+}
+
+.summary-card .labels-wrapper .label.visual-color {
+  background-color: rgb(243, 243, 253);
+}
+
+.summary-card .labels-wrapper .label.reaction-color .title-color {
+  color: rgb(254, 137, 138);
+}
+
+.summary-card .labels-wrapper .label.memory-color .title-color {
+  color: rgb(232, 176, 58);
+}
+
+.summary-card .labels-wrapper .label.verbal-color .title-color {
+  color: rgb(125, 191, 173);
+}
+
+.summary-card .labels-wrapper .label.visual-color .title-color {
+  color: rgb(31, 43, 154);
+}
+
+.summary-card .labels-wrapper .label span {
+  color: gray;
+}
+
+.summary-card button {
+  border-radius: 30px;
+  width: 220px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: rgb(48, 59, 89);
+  border: none;
+  cursor: pointer;
+}
+
+.summary-card button div {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
