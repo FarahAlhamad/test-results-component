@@ -30,7 +30,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 400px;
-  width: 500px;
+  width: 600px;
 }
 
 .your-result-card {
@@ -97,7 +97,7 @@ html {
 }
 
 .summary-card {
-  padding: 30px 30px 30px 70px;
+  padding: 40px 30px 30px 55px;
   background-color: brown;
   width: 50%;
   height: 100%;
@@ -105,4 +105,77 @@ html {
   border-radius: 5%;
   background-color: white;
   box-shadow: 2px 3px 10px gray;
+}
+
+.summary-card .title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.labels-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.summary-card .labels-wrapper .label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.summary-card .labels-wrapper .label.reaction-color {
+  background-color: rgb(255, 246, 245);
+}
+
+.summary-card .labels-wrapper .label.memory-color {
+  background-color: rgb(255, 251, 242);
+}
+
+.summary-card .labels-wrapper .label.verbal-color {
+  background-color: rgb(242, 251, 250);
+}
+
+.summary-card .labels-wrapper .label.visual-color {
+  background-color: rgb(243, 243, 253);
+}
+
+.summary-card .labels-wrapper .label.reaction-color .title-color {
+  color: rgb(254, 137, 138);
+}
+
+.summary-card .labels-wrapper .label.memory-color .title-color {
+  color: rgb(232, 176, 58);
+}
+
+.summary-card .labels-wrapper .label.verbal-color .title-color {
+  color: rgb(125, 191, 173);
+}
+
+.summary-card .labels-wrapper .label.visual-color .title-color {
+  color: rgb(31, 43, 154);
+}
+
+.summary-card .labels-wrapper .label span {
+  color: gray;
+}
+
+.summary-card button {
+  border-radius: 30px;
+  width: 220px;
+  height: 40px;
+  margin-top: 40px;
+  background-color: rgb(48, 59, 89);
+  border: none;
+  cursor: pointer;
+}
+
+.summary-card button div {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
 }
